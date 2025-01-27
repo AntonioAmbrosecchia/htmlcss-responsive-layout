@@ -12,6 +12,7 @@
     --gai-text: #4e3969;
     --gai-main: #f6f5f3;
     --gai-rule: #f7972e;
+    --gai-credits: #7c69a4;
 }
 
 header {
@@ -178,6 +179,50 @@ main {
 
         #paragrafo_tiramisù {
             height: calc(100% / 12 * 7);
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    height: 200px;
+    background-color: var(--gai-credits);
+
+    #row_footer_title_link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 140px;
+        width: 500px;
+
+
+        #container_title_footer {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+        }
+
+        #container_link_footer {
+            display: flex;
+            justify-content: space-between;
+            width: 480px;
+
+
+            .link_footer {
+                color: white;
+            }
+        }
+
+        #link_footer_low {
+            color: white;
         }
     }
 }
