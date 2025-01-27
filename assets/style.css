@@ -39,6 +39,8 @@ main {
         margin-bottom: 15px;
     }
 
+    /*titolo e parentesi a scomparsa*/
+
     #container_title_parenetsi_tiramisù {
         display: flex;
         margin-bottom: 30px;
@@ -56,10 +58,13 @@ main {
         }
     }
 
+    /*video e cicetta tiramisù*/
+
     #row_video_ricetta {
         display: flex;
         flex-direction: column;
         height: 660px;
+        margin-bottom: 40px;
 
 
         #container_video {
@@ -76,9 +81,54 @@ main {
             border-bottom-right-radius: 5px;
             padding: 40px;
             background-color: white;
+            box-shadow: 3px 3px 10px gray;
 
             #paragrafi_ricetta {
                 margin-top: 20px;
+            }
+        }
+    }
+
+    /*link social*/
+
+    #row_link_social {
+        display: flex;
+        justify-content: space-between;
+
+        .container_link_social {
+            display: flex;
+            justify-content: center;
+            width: calc(100% / 12 * 1);
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 100px;
+            box-shadow: 3px 3px 5px gray;
+
+            .fa-facebook {
+                color: #1a77f3;
+            }
+
+            .fa-twitter {
+                color: #009eff;
+            }
+
+            .fa-instagram {
+                color: #e15689;
+            }
+
+            .fa-pinterest,
+            .fa-youtube {
+                color: #e62323;
+            }
+
+            .social_text {
+                display: none;
+                text-decoration: none;
+                color: black;
+
             }
         }
     }
