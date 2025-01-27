@@ -162,18 +162,22 @@ main {
 
     #container_foto_paragrafo_tiramisù {
         display: flex;
-        justify-content: column;
-        height: 1020px;
+
+        align-items: center;
+        flex-direction: column;
+        height: 460px;
 
         #foto_tiramisù {
-            height: 30%;
-            width: 100%;
+            height: calc(100% / 12 * 5);
+            width: calc(100% / 12 * 4);
             background-image: url(../assets/img/tiramisu.jpg);
-            background-size: contain;
+            background-size: cover;
             background-repeat: no-repeat;
 
         }
 
-        #paragrafo_tiramisù {}
+        #paragrafo_tiramisù {
+            height: calc(100% / 12 * 7);
+        }
     }
 }
