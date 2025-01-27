@@ -8,6 +8,9 @@
 
 :root {
     --gia-main_title: #ff9614;
+    --gai-subtext: rgb(167, 165, 165);
+    --gai-text: #4e3969;
+    --gai-main: #f6f5f3;
 }
 
 header {
@@ -17,9 +20,66 @@ header {
     background-color: white;
     height: 90px;
 
-    h1 {
+    #main_title_header {
         font-family: 'Nerko One', cursive;
         color: var(--gia-main_title);
-        text-shadow: 1px 1px 4px black;
+        text-shadow: 1px 1px 1px gray;
+        font-size: 60px;
+    }
+}
+
+main {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+    padding: 25px;
+    background-color: var(--gai-main);
+
+    #sottotesto {
+        color: var(--gai-subtext);
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    #container_title_parenetsi_tiramisù {
+        display: flex;
+        margin-bottom: 30px;
+
+        #title_tiramisù {
+            color: var(--gai-text);
+            display: flex;
+            margin-right: 10px;
+
+        }
+
+        #parentesi_tiramisù {
+            display: none;
+            color: var(--gai-text);
+        }
+    }
+
+    #row_video_ricetta {
+        display: flex;
+        flex-direction: column;
+        height: 660px;
+
+
+        #container_video {
+            display: flex;
+            height: 320px;
+        }
+
+        #container_ricetta {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            height: 340px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 40px;
+            background-color: white;
+
+            #paragrafi_ricetta {
+                margin-top: 20px;
+            }
+        }
     }
 }
