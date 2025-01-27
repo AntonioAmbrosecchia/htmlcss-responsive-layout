@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*palette_colori*/
+
+:root {
+    --gia-main_title: #ff9614;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 90px;
+
+    h1 {
+        font-family: 'Nerko One', cursive;
+        color: var(--gia-main_title);
+        text-shadow: 1px 1px 4px black;
+    }
+}
