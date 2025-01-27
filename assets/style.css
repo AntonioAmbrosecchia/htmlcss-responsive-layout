@@ -11,6 +11,7 @@
     --gai-subtext: rgb(167, 165, 165);
     --gai-text: #4e3969;
     --gai-main: #f6f5f3;
+    --gai-rule: #f7972e;
 }
 
 header {
@@ -89,7 +90,7 @@ main {
         }
     }
 
-    /*link social*/
+    /*link social a scomparsa*/
 
     #row_link_social {
         display: flex;
@@ -135,7 +136,6 @@ main {
 
     #banner {
         display: none;
-        margin-bottom: 50px;
         margin-top: 30px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -143,5 +143,37 @@ main {
         background-image: url(../assets/img/banner.png);
     }
 
+    /*PRESENTATION*/
 
+    #container_presentation {
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+        #presentation {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border-color: var(--gai-rule);
+            width: 13%;
+        }
+    }
+
+    #container_foto_paragrafo_tiramisù {
+        display: flex;
+        justify-content: column;
+        height: 1020px;
+
+        #foto_tiramisù {
+            height: 30%;
+            width: 100%;
+            background-image: url(../assets/img/tiramisu.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+        #paragrafo_tiramisù {}
+    }
 }
