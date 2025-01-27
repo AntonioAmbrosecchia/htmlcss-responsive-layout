@@ -85,8 +85,26 @@ main {
             background-color: white;
             box-shadow: 3px 3px 10px gray;
 
-            #paragrafi_ricetta {
-                margin-top: 20px;
+            #container_paragrafi_ricetta {
+                display: flex;
+                flex-direction: column;
+                height: 150px;
+
+                #container_paragrafi_top {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 90px;
+                }
+
+                #container_paragrafi_bottom {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 60px;
+                    margin-top: 15px;
+                }
+
             }
         }
     }
@@ -134,6 +152,8 @@ main {
             }
         }
     }
+
+    /*banner a scomparsa*/
 
     #banner {
         display: none;
@@ -223,6 +243,66 @@ footer {
 
         #link_footer_low {
             color: white;
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    header {
+        justify-content: start;
+        padding-left: 15px;
+    }
+
+    main {
+        padding: 35px;
+
+
+        #banner {
+            display: block;
+        }
+
+        #container_title_parenetsi_tiramisù {
+
+            #title_tiramisù {
+                font-size: 35px;
+            }
+
+            #parentesi_tiramisù {
+                display: flex;
+                font-size: 35px;
+            }
+        }
+
+        #row_video_ricetta {
+
+            #container_video {
+                height: 440px;
+            }
+
+            #container_ricetta {
+                height: 220px;
+
+                #container_paragrafi_ricetta {
+
+
+
+
+                    #container_paragrafi_top {
+                        flex-direction: row;
+                        width: 800px;
+                        height: 20px;
+                        margin-top: 40px;
+                    }
+
+                    #container_paragrafi_bottom {
+                        flex-direction: row;
+                        width: 540px;
+                        height: 20px;
+                        margin-top: 25px;
+                    }
+                }
+            }
         }
     }
 }
